@@ -1,0 +1,79 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top " style="background-color: rgba(0, 0, 0, 0.7)">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="./assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Gymnasium
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        О гимназии
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item {% if page.url == '/history/' %} active {% endif %}"
+                            href="/history">История гимназии</a>
+                        <a class="dropdown-item {% if page.url == '/director/' %} active {% endif %}"
+                            href="/director">Страница директора</a>
+                        <a class="dropdown-item" href="#">Педагогический состав</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Учебная работа</a>
+                        <a class="dropdown-item" href="#">Методическая работа</a>
+                        <a class="dropdown-item" href="#">Воспитательная работа</a>
+                        <a class="dropdown-item" href="#">Проектно-исследовательякая деятельность</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url == '/news/' %} active {% endif %}" href="/news">Новости</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Учительская
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">МО точных наук</a>
+                        <a class="dropdown-item" href="#">МО какое-то</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Критериальное оценивание</a>
+                        <a class="dropdown-item" href="#">Методические материалы</a>
+                        <a class="dropdown-item" href="#">Этический кодекс педагога</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Родителям и ученикам
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Зачисление в первый класс</a>
+                        <a class="dropdown-item" href="#">Рассписание уроков и кружков</a>
+                        <a class="dropdown-item" href="#">Профориентационный кабинет</a>
+                        <a class="dropdown-item" href="#">Советы психолога</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Попечительский совет</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Школьное питание
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Школьная столовая</a>
+                        <a class="dropdown-item" href="#">Советы по питанию</a>
+                        <a class="dropdown-item" href="#">Госуслуга по бесплатному питанию</a>
+                        <a class="dropdown-item" href="#">Бракеражная комиссия</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
