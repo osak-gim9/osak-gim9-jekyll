@@ -1,0 +1,12 @@
+---
+layout: container
+---
+<div class="news-header">
+    <div class="news-title">
+        <h2>{{page.title}}</h2>
+    </div>
+    <img src="{{ page.poster}}" alt="{{ page.title }}" class="img-fluid" />
+    <p>Дата публикации: {{ page.date | date: "%d %b %Y г." }}</p>
+</div>
+
+{{content}}

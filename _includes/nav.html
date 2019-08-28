@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top " style="background-color: rgba(0, 0, 0, 0.7)">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top " style="background-color: rgba(0, 0, 0, 0.7)">
     <div class="container">
         <a class="navbar-brand" href="/">
-            <img src="./assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="/assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
             Gymnasium
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -18,14 +18,14 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item {% if page.url == '/history/' %} active {% endif %}"
                             href="/history">История гимназии</a>
+                        <a class="dropdown-item" href="#">Устав гимназии</a>
                         <a class="dropdown-item {% if page.url == '/director/' %} active {% endif %}"
                             href="/director">Страница директора</a>
-                        <a class="dropdown-item" href="#">Педагогический состав</a>
+                        <a class="dropdown-item {% if page.url == '/teachers/' %} active {% endif %}" href="/teachers">Педагогический состав</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Учебная работа</a>
                         <a class="dropdown-item" href="#">Методическая работа</a>
                         <a class="dropdown-item" href="#">Воспитательная работа</a>
-                        <a class="dropdown-item" href="#">Проектно-исследовательякая деятельность</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -38,11 +38,19 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">МО точных наук</a>
-                        <a class="dropdown-item" href="#">МО какое-то</a>
+                        <a class="dropdown-item" href="#">МО гуманитарного цикла</a>
+                        <a class="dropdown-item" href="#">МО казахского языка и литературы</a>
+                        <a class="dropdown-item" href="#">МО эстетического цикла</a>
+                        <a class="dropdown-item" href="#">МО начальных классов</a>
+                        <a class="dropdown-item" href="#">МО классных руководителей</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Критериальное оценивание</a>
-                        <a class="dropdown-item" href="#">Методические материалы</a>
                         <a class="dropdown-item" href="#">Этический кодекс педагога</a>
+                        <a class="dropdown-item" href="#">Аттестация</a>
+                        <a class="dropdown-item" href="#">Проектно-исследовательская деятельность</a>
+                        <a class="dropdown-item" href="#">Работа по самообразованию</a>
+                        <a class="dropdown-item" href="#">Повышение квалификации</a>
+                        <a class="dropdown-item" href="#">Методический совет</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -52,7 +60,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Зачисление в первый класс</a>
-                        <a class="dropdown-item" href="#">Рассписание уроков и кружков</a>
+                        <a class="dropdown-item" href="#">Расписание уроков и кружков</a>
                         <a class="dropdown-item" href="#">Профориентационный кабинет</a>
                         <a class="dropdown-item" href="#">Советы психолога</a>
                     </div>
