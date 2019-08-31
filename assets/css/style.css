@@ -44,3 +44,43 @@
     text-align: center;
     padding: 15px;
 }
+
+.img-cover{
+    object-fit: cover;
+}
+
+.teacher-list{
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.teacher-card{
+ margin: 10px;
+ max-width: 220px;
+}
+
+.teacher-card p{
+    margin: 0;
+}
+
+.teacher-img{
+    object-fit: cover;
+    width: 100%;
+    min-height: 250px;;
+}
+
+.teacher-title{
+    color: white;
+    background-color: #0095ff;
+    padding: 5px;
+}
+
+.teacher-link{
+    color: inherit;
+}
+
+.teacher-link:hover{
+    text-decoration: none;
+    color: inherit;
+}

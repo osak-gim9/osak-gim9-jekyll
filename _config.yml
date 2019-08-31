@@ -9,6 +9,41 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+
+menu:
+  - url: /history
+    title: "О гимназии"
+    submenu:
+      - url: /history
+        title: "История гимназии"
+      - url: /history
+        title: "Устав гимназии"
+      - url: /history
+        title: "Страница директора"
+      - url: /history
+        title: "Педагогический состав"
+      - divider: true
+      - url: /history
+        title: "Учебная работа"
+      - url: /history
+        title: "Методическая работа"
+      - url: /history
+        title: "Педагогический состав"
+  - url: /news
+    title: "Новости"
+  - url: /dsf
+    title: "Учительская"
+  - url: /sdf
+    title: "Родителям и ученикам"
+  - url: /sdf
+    title: "Попечительский совет"
+  - url: /sfds
+    title: "Школьное питание"
+
+collections:
+    posts:
+      output: true
+      permalink: /news/:title.html
+    teachers:
+      output: true
+      permalink: /teachers/:title.html
