@@ -1,6 +1,7 @@
 ---
-layout: container
+layout: default
 ---
+<div class="container mt-2">
 <div class="news-header">
     <div class="news-title">
         <h2>{{page.title}}</h2>
@@ -9,4 +10,6 @@ layout: container
     <p>Дата публикации: {{ page.date | date: "%d %b %Y г." }}</p>
 </div>
 
+
 {{content}}
+</div>
