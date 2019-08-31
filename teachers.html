@@ -6,16 +6,17 @@ layout: container
     <h2 сlass="featurette-heading ">Педагогический состав</h2>
 </div>
 
-<div class="card-columns">
-{% for teacher in site.teachers %}
-    <div class="card">
-      <img src="{{teacher.foto}}" class="card-img-top" alt="{{teacher.title}}">
-      <div class="card-body">
-        <h5 class="card-title"><a href="{{teacher.url}}">{{teacher.title}}</a></h5>
-        <p class="card-text">{{teacher.excerpt}}</p>
+<div class="d-flex teacher-list">
+    {% for teacher in site.teachers %}
+    <a class="teacher-link" href="{{teacher.url}}">
+      <div class="teacher-card">
+          <img src="{{teacher.foto}}" class="teacher-img" alt="{{teacher.title}}" />
+          <h5 class="teacher-title">{{teacher.title}}</h5>
+          <p class="teacher-description" >{{ teacher.excerpt}}</p>
       </div>
-    </div>
-{% endfor %}
+    </a>
+    {% endfor %}
+
 </div>
 
 
